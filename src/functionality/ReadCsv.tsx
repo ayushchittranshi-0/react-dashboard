@@ -6,7 +6,7 @@ const CsvReader = () => {
 
   useEffect(() => {
     // Load the CSV file
-    Papa.parse('/csv/data.csv', {
+    Papa.parse('/assets/data.csv', {
       download: true, // Set to true for downloading the file
       header: true,   // Set to true to use the first row as headers
       complete: (results) => {
